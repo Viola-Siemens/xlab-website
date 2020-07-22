@@ -24,7 +24,7 @@ Steps:
 
 1. Clone this project
 ```bash
-$ git clone git@github.com:X-lab2017/xlab-website.git
+$ git clone git@github.com:Viola-Siemens/xlab-website.git
 ```
 
 2. Go to the project folder
