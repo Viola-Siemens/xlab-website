@@ -41,7 +41,7 @@ jobs:
             git commit -m "${{ github.event.head_commit.message }}"
           fi
 
-      - name: Push changes to X-lab2017.github.io
+      - name: Push changes to Viola-Siemens.github.io
         if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens' && github.ref == 'refs/heads/master' }}
         uses: Viola-Siemens/github-push-action@master
         with:
