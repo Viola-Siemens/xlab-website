@@ -24,11 +24,11 @@ jobs:
         run: hugo
 
       - name: Commit files
-        if: ${{ github.repository == 'X-lab2017/xlab-website' && github.ref == 'refs/heads/master' }}
+        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens.github.io' && github.ref == 'refs/heads/master' }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git clone https://github.com/X-lab2017/X-lab2017.github.io.git public_temp.git
+          git clone https://github.com/Viola-Siemens/Viola-Siemens.github.io.git public_temp.git
           mv public_temp.git/.git public/.git
           cd ./public
           git add .
@@ -42,12 +42,12 @@ jobs:
           fi
 
       - name: Push changes to X-lab2017.github.io
-        if: ${{ github.repository == 'X-lab2017/xlab-website' && github.ref == 'refs/heads/master' }}
-        uses: X-lab2017/github-push-action@master
+        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens.github.io' && github.ref == 'refs/heads/master' }}
+        uses: Viola-Siemens.github.io/github-push-action@master
         with:
           github_token: ${{ secrets.TARGET_REPO_GITHUB_TOKEN }}
           branch: master
           force: true
           tags: false
           directory: ./public
-          repository: X-lab2017/X-lab2017.github.io
+          repository: Viola-Siemens/Viola-Siemens.github.io
