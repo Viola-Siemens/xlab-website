@@ -50,4 +50,4 @@ jobs:
           force: true
           tags: false
           directory: ./public
-          repository: Viola-Siemens/Viola-Siemens
+          repository: Viola-Siemens/Viola-Siemens.github.io
