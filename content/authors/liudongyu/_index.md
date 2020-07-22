@@ -21,7 +21,6 @@ organizations:
 bio: 编程五分钟，调试俩小时
 
 interests:
-- anime
 - football
 - rock music
 - deep learning
