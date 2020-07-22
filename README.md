@@ -1,6 +1,6 @@
-# X-lab Official Website
+# project2 Website
 
- Official website of X-lab open laboratory, you can view the site on http://www.x-lab.info.
+ 参考了http://www.x-lab.info.
 
  ![avatar](./static/img/xlab.png)
 
