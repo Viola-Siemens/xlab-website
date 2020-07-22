@@ -24,7 +24,7 @@ jobs:
         run: hugo
 
       - name: Commit files
-        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens.github.io' && github.ref == 'refs/heads/master' }}
+        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens' && github.ref == 'refs/heads/master' }}
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
@@ -42,7 +42,7 @@ jobs:
           fi
 
       - name: Push changes to X-lab2017.github.io
-        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens.github.io' && github.ref == 'refs/heads/master' }}
+        if: ${{ github.repository == 'Viola-Siemens/Viola-Siemens' && github.ref == 'refs/heads/master' }}
         uses: Viola-Siemens.github.io/github-push-action@master
         with:
           github_token: ${{ secrets.TARGET_REPO_GITHUB_TOKEN }}
